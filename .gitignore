@@ -1,0 +1,16 @@
+# Fichiers de configuration et secrets (SÉCURITÉ CRITIQUE)
+.env
+
+# Environnement virtuel Python
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Données sensibles (RGPD)
+*.xlsx
+*.csv
+
+# Fichiers de log temporaires et divers
+*.log
+.DS_Store
