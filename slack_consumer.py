@@ -11,9 +11,9 @@ SLACK_WEBHOOK_URL = os.getenv('SLACK_WEBHOOK_URL')
 
 # Configuration du Consumer Redpanda
 conf = {
-    'bootstrap.servers': 'localhost:19092', # Le port exposé de notre Redpanda
-    'group.id': 'slack_notifier_group',    # Le nom de notre groupe de consommateurs
-    'auto.offset.reset': 'earliest'        # Si on démarre, on lit depuis le début
+    'bootstrap.servers': 'localhost:19092',
+    'group.id': 'slack_notifier_demo_v2',  # <-- On change le nom du groupe
+    'auto.offset.reset': 'latest'          # <-- CRUCIAL: 'latest' au lieu de 'earliest'
 }
 consumer = Consumer(conf)
 
