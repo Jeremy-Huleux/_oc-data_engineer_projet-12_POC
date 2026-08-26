@@ -1,17 +1,17 @@
-# 🚀 POC Data Engineering : Architecture Hybride (Batch & Streaming) - "Prime Sportive"
+# POC Data Engineering : Architecture Hybride (Batch & Streaming) - "Prime Sportive"
 
 Ce dépôt contient la preuve de concept (POC) d'une architecture de données hybride, combinant un traitement par lots (Batch) et un traitement en temps réel (Streaming).
 
 Ce projet a été réalisé dans le cadre de la simulation de la mise en place d'une "Prime Sportive" (récompense financière pour les employés utilisant des modes de transport doux), afin d'en évaluer l'impact financier et d'automatiser les alertes métier.
 
-## 🎯 Objectifs du Projet
+## Objectifs du Projet
 
 1. **Ingestion & Validation :** Collecter les déclarations de trajets des employés et valider la cohérence des distances réelles via l'API Google Maps Distance Matrix.
 2. **Streaming & CDC (Temps Réel) :** Mettre en place un pipeline Change Data Capture (CDC) pour intercepter toute nouvelle déclaration dans la base de données et envoyer une notification instantanée sur Slack, sans impacter les performances de la base de données transactionnelle.
 3. **Traitement Batch :** Développer un job de transformation permettant de calculer l'éligibilité à la prime et de générer un dataset consolidé.
 4. **Business Intelligence (BI) :** Fournir un tableau de bord dynamique à la direction avec un paramètre de scénario (What-If) pour simuler l'impact financier d'une variation du taux de la prime en temps réel.
 
-## 🏗️ Architecture Technique
+## Architecture Technique
 
 L'architecture repose sur des conteneurs isolés et reproductibles :
 
@@ -22,7 +22,7 @@ L'architecture repose sur des conteneurs isolés et reproductibles :
 * **Data Visualisation :** Power BI (avec mesures DAX pour paramètres dynamiques et formatage conditionnel)
 * **Déploiement :** Docker & Docker Compose
 
-## 📂 Structure du Dépôt
+## Structure du Dépôt
 
 * `docker-compose.yml` : Configuration de l'infrastructure (PostgreSQL, Redpanda, Debezium).
 * `init.sql` : Script d'initialisation de la base de données PostgreSQL.
@@ -32,7 +32,7 @@ L'architecture repose sur des conteneurs isolés et reproductibles :
 * `.env.example` : Modèle de variables d'environnement (API keys, identifiants BDD) garantissant la sécurité des secrets.
 * `dashboard_prime_sportive.pbix` : Tableau de bord Power BI interactif.
 
-## ⚙️ Prérequis et Installation
+## Prérequis et Installation
 
 ### 1. Cloner le dépôt et configurer l'environnement
 
@@ -66,7 +66,7 @@ Installez les dépendances (`pip install -r requirements.txt`) puis exécutez le
 * `python slack_consumer.py` pour lancer l'écoute en temps réel.
 * `python spark_job.py` pour consolider les données destinées à la Business Intelligence.
 
-## 🔒 Sécurité et Conformité RGPD
+## Sécurité et Conformité RGPD
 
 Ce projet intègre les principes de Privacy by Design :
 
@@ -75,7 +75,7 @@ Ce projet intègre les principes de Privacy by Design :
 
 ---
 
-## 👨‍💻 Auteur
+## Auteur
 
 **Jérémy Huleux**
 Actuellement en formation Data Engineer (OpenClassrooms).
