@@ -14,6 +14,5 @@ __pycache__/
 # Fichiers de log temporaires et divers
 *.log
 .DS_Store
-/premeire ttentative.pbix
-/~$premiere essais.pptx
-/premiere essais.pptx
+*.pbix
+*.pptx
