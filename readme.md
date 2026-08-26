@@ -79,7 +79,7 @@ Ce projet intègre les principes de Privacy by Design :
 
 **Jérémy Huleux**
 Actuellement en formation Data Engineer (OpenClassrooms).
-*Je suis à la recherche d'une alternance ou d'un stage en Data Engineering dans la région Hauts-de-France (Lille, Calais, Boulogne-sur-Mer, Ardres).*
+*Je suis à la recherche d'un job dans la Data Engineering ou dans le développement dans la région Hauts-de-France (Lille, Calais, Boulogne-sur-Mer, Ardres).*
 
 * [LinkedIn](https://www.linkedin.com/in/huleux-jeremy)
 * [GitHub](https://github.com/Jeremy-Huleux)
